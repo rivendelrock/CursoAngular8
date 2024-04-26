@@ -1,0 +1,16 @@
+
+    <app-cabecera></app-cabecera>
+
+
+<h1 class="container bg-dark text-white text-center mt-4 mp-4">NGIF show={{show}}</h1>
+
+<div class="container">
+    <button class="btn btn-warning" (click)="show=!show">Acción</button>
+    <p class="text-info" *ngIf="show; else showDos">La directiva ngIf sirve para mostrar u ocultar elementos en una pagina web. Si está true se muestra, si es false no se muestra. 
+        Le podemos meter variables tb. Se oculta incluso en el menú de inspección de elementos del cógido de HTML.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem perspiciatis voluptate quos corrupti aliquid harum iusto facilis hic. Voluptatibus animi necessitatibus aspernatur aliquam omnis nemo illum, quis culpa eius corrupti!</p>
+    
+    <ng-template #showDos><p class="text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque harum, aspernatur esse sunt perferendis. Est, in. Harum veritatis itaque nulla beatae amet sed eum similique. Nobis sunt placeat laudantium?</p></ng-template>     
+</div>
+
+    <app-footer></app-footer>

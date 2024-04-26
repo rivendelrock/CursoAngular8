@@ -1,0 +1,23 @@
+<!-- * * * * * * * * * *Cree un nuevo proyecto con el nombre que usted desee, luego agregue 3 botones. 
+    El primero será un contador positivo (cómo el vídeo) que al contar más de 15 mostrará un botón llamado “Hola mundo” y 
+    el segundo será un contador negativo que al llegar a -10 mostrará un botón llamado “Adiós”. * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * *Cree un nuevo proyecto con el nombre que usted desee.
+Cree los componentes que considere necesario.
+Utilice condiciones.
+Utilizar botones. * * * * * * * * * ! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<h1 class="container bg-dark text-white text-center mt-4 mp-4">Contador del 1 al 10</h1>
+
+<button class="btn btn-warning" (click) ="contador=contador+1">Positivo</button> 
+<button class="btn btn-info" (click) ="contador=contador-1">Negativo</button> 
+<button class="btn btn-blue" (click) ="contador=0">Neutro</button>
+
+<p class="text-info">{{contador}}</p>
+<p class="text-info d-none" [ngClass]="{'d-block':contador==15}">Hola Mundo</p>
+<p class="text-info d-none" [ngClass]="{'d-block':contador==-10}">Adios</p>
+
+
+
+

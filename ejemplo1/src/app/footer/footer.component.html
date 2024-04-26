@@ -1,0 +1,21 @@
+<p>footer works!</p>
+<h1 class="container bg-dark text-white text-center mt-4 mp-4">NGClass para poder hacer cosas como cambiar fondo al hacer click[ngClass]</h1>
+
+<div class="container">
+    <button class="btn btn-dark mb" (click)="fondo='bg-dark'">Primero</button>
+    <button class="btn btn-danger mb" (click)="fondo='bg-danger'">Segundo</button>
+    <p class="text-info" [ngClass]="fondo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem perspiciatis voluptate quos corrupti aliquid harum iusto facilis hic. Voluptatibus animi necessitatibus aspernatur aliquam omnis nemo illum, quis culpa eius corrupti!</p>
+    
+    <p class="text-danger">podemos usar cosas como d -none o d-block para que se muestre o no el párrafoLorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque harum, aspernatur esse sunt perferendis. Est, in. Harum veritatis itaque nulla beatae amet sed eum similique. Nobis sunt placeat laudantium?</p>   
+</div>
+
+
+<h1 class="container bg-dark text-white text-center mt-4 mp-4">NGClass para poner condiciones y que haga algo si se cumplen[ngClass]</h1>
+
+<div class="container">
+    <button class="btn btn-dark mb" (click)="activa='primero'">Primero</button>
+    <button class="btn btn-danger mb" (click)="activa='segundo'">Segundo</button>
+    <p class="text-info d-none" [ngClass]="{'d-block':activa=='primero'}">Aquí le metemos un condicional que dice que si activa es igual a primero se active el d-block que muestra el parrafo primero</p>
+    
+    <p class="text-danger d-none" [ngClass]="{'d-block':activa=='segundo'}">Al pulsar el botón segundo activa se convierte en d-block que muestra el párrafo, aquí le metemos directamente el d-block sin poner condicionales. </p>   
+</div>
